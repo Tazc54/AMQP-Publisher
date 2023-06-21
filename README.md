@@ -1,7 +1,7 @@
 # AMQP-Publisher
-# This project consist on a work queue and a Publish/subscription Schema.
-# new_task.py and worker.py are part of the work queue process.
-# emit_log.py and receive_logs.py are part of the publish/subscription process.
+* This project consist on a work queue and a Publish/subscription Schema.
+* new_task.py and worker.py are part of the work queue process.
+* emit_log.py and receive_logs.py are part of the publish/subscription process.
 
 
 # To start this you have to make sure that:
