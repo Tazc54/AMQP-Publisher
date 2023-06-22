@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 import pika
+from utils import get_url
 
-connection = pika.BlockingConnection(
-    pika.ConnectionParameters(host='localhost'))
+
+params = pika.URLParameters(get_url())
+connection = pika.BlockingConnection(params)
 channel = connection.channel()
 
 channel.exchange_declare(exchange='logs', exchange_type='fanout')
